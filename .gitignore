@@ -56,13 +56,6 @@ Thumbs.db
 # data/*.tif
 # data/*.tiff
 
-# Output files
-outputs/*.png
-outputs/*.jpg
-outputs/*.pdf
-outputs/*.html
-outputs/*.json
-outputs/*.csv
 
 # Jupyter Notebook
 .ipynb_checkpoints

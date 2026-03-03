@@ -79,7 +79,10 @@ class CWAWeatherAPI:
         
         if filename is None:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            filename = f"outputs/weather_stations_{timestamp}.csv"
+            filename = f"c:\\Users\\user\\crs_project\\class_1\\outputs\\weather_stations_{timestamp}.csv"
+        
+        # 確保目錄存在
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
         
         df = pd.DataFrame(stations_data)
         df.to_csv(filename, index=False, encoding='utf-8-sig')

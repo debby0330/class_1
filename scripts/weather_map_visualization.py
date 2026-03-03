@@ -159,7 +159,7 @@ class WeatherMapVisualizer:
         # 儲存地圖
         if output_file is None:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            output_file = f"outputs/weather_map_{timestamp}.html"
+            output_file = f"c:\\Users\\user\\crs_project\\class_1\\outputs\\weather_map_{timestamp}.html"
         
         m.save(output_file)
         print(f"地圖已儲存至: {output_file}")
@@ -217,7 +217,7 @@ class WeatherMapVisualizer:
         # 儲存熱力圖
         if output_file is None:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            output_file = f"outputs/weather_heatmap_{timestamp}.html"
+            output_file = f"c:\\Users\\user\\crs_project\\class_1\\outputs\\weather_heatmap_{timestamp}.html"
         
         m.save(output_file)
         print(f"熱力圖已儲存至: {output_file}")
@@ -227,7 +227,7 @@ class WeatherMapVisualizer:
 def main():
     """主程式"""
     # 查找最新的 CSV 檔案
-    output_dir = "outputs"
+    output_dir = "c:\\Users\\user\\crs_project\\class_1\\outputs"
     csv_files = [f for f in os.listdir(output_dir) if f.startswith('weather_stations_') and f.endswith('.csv')]
     
     if not csv_files:
